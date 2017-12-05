@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.app-container{
+    display: flex;
+    flex-direction: column;
+    max-width: 350px;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: -webkit-gradient(linear, left top, left bottom, from(#ea6b5d), to(#e95363));
+    background-image: -webkit-linear-gradient(top, #ea6b5d, #e95363);
+    background-image: -moz-linear-gradient(top, #ea6b5d, #e95363);
+    background-image: linear-gradient(to bottom, #ea6b5d, #e95363);
+}
+
+.weight-range{
+    color: blue;
+}

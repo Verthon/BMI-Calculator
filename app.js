@@ -5,12 +5,14 @@ let resultH = document.getElementById('resultH');
 let resultW = document.getElementById('resultW');
 const calculate = document.getElementById('calculate');
 let bmi = document.getElementById('bmi');
+
 height.addEventListener('input', function(){
   resultH.value = this.value;
 });
 width.addEventListener('input', function(){
   resultW.value = this.value;
 });
+
 //calculate BMI
 function calculateBmi(){
   let bmiH = parseFloat(resultH.value);
@@ -20,6 +22,8 @@ function calculateBmi(){
   bmi.innerText = bmiResult.toPrecision(3);
   return bmiResult;
 }
+
+//Update BMI status
 function updateContent(r){
   const toCheck = r.toPrecision(3);
   const status = document.getElementById('bmi-status');
@@ -36,6 +40,7 @@ function updateContent(r){
     status.textContent = "Obese!";
   }
 }
+//Calculate result after click on 'calculate' button
 calculate.addEventListener('click', function(e){
   e.preventDefault();
   let result = calculateBmi();

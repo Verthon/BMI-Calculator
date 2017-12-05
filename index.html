@@ -3,25 +3,29 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>JS Bin</title>
+  <link rel="stylesheet" href="style.css">
+  <title>BMI Calculator</title>
 </head>
 <body>
-  <button id="female">Female</button>
-  <button id="male">Male</button>
+  <main class="app-container">
+    <header class="app-header">
+      <button id="female">Female</button>
+      <button id="male">Male</button>
+    </header>
+    <label for="height">Height</label>
+    <input type="range" name="height" id="height" min="100" max="250" step="1">
   <br>
-  <label for="height">Height</label>
-  <input type="range" name="height" id="height" min="100" max="250" step="1">
-  <br>
-  <label for="weight">Weight</label>
-  <input type="range" name="weight" id="width" min="20" max="300" step="1">
-  <button id="calculate">Calculate</button>
-  <input type="text" id="resultH" value="">
-  <input type="text" id="resultW" value="">
-  <strong id="bmi"></strong>
-  <p id="bmi-status"></p>
-  <p>Body mass index, or BMI is used to determine whether
-    you are in healthy weight range for your height.
-  </p>
+    <label for="weight">Weight</label>
+    <input type="range" name="weight" id="width" class="weight-range" min="20" max="300" step="1">
+    <button id="calculate">Calculate</button>
+    <input type="text" id="resultH" value="">
+    <input type="text" id="resultW" value="">
+    <strong id="bmi"></strong>
+    <p id="bmi-status"></p>
+    <p>Body mass index, or BMI is used to determine whether
+      you are in healthy weight range for your height.
+    </p>
+  </main>
   <script src="app.js"></script>
 </body>
 </html>
