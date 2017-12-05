@@ -15,7 +15,7 @@ calculate.addEventListener('click', function(e){
   e.preventDefault();
   let bmiH = parseFloat(resultH.value);
   let bmiW = parseFloat(resultW.value);
-  bmiH = bmiH.toPrecision(2);
-  bmiW = bmiW.toPrecision(2);
-  bmi.innerText = bmiW/(bmiH/100);
+  let bmiResult = bmiW/(bmiH/100);
+  bmiResult /= (bmiH/100);
+  bmi.innerText = bmiResult.toPrecision(3);
 });
