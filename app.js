@@ -11,11 +11,33 @@ height.addEventListener('input', function(){
 width.addEventListener('input', function(){
   resultW.value = this.value;
 });
-calculate.addEventListener('click', function(e){
-  e.preventDefault();
+//calculate BMI
+function calculateBmi(){
   let bmiH = parseFloat(resultH.value);
   let bmiW = parseFloat(resultW.value);
   let bmiResult = bmiW/(bmiH/100);
   bmiResult /= (bmiH/100);
   bmi.innerText = bmiResult.toPrecision(3);
+  return bmiResult;
+}
+function updateContent(r){
+  const toCheck = r.toPrecision(3);
+  const status = document.getElementById('bmi-status');
+  if(toCheck <= 18.5){
+    status.textContent = "Underweight!";
+  }
+  else if(toCheck > 18.5 && toCheck < 25){
+    status.textContent = "Normal body weight!";
+  }
+  else if(toCheck > 25 && toCheck < 30){
+    status.textContent = "Overweight!";
+  }
+  else{
+    status.textContent = "Obese!";
+  }
+}
+calculate.addEventListener('click', function(e){
+  e.preventDefault();
+  let result = calculateBmi();
+  updateContent(result);
 });
