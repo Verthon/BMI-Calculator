@@ -4,28 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato:700" rel="stylesheet">
+  <!--<script src="https://use.fontawesome.com/a9343645f1.js"></script>-->
   <title>BMI Calculator</title>
 </head>
 <body>
   <main class="app-container">
     <header class="app-header">
-      <button id="female">Female</button>
-      <button id="male">Male</button>
+      <h1 class="section-header">Gender</h1>
+      <button id="female" class="gender"><i class="fa fa-venus fa-lg" aria-hidden="true"></i>  Female</button>
+      <button id="male" class="gender"><i class="fa fa-mars fa-lg" aria-hidden="true"></i>  Male</button>
     </header>
-    <label for="height">Height</label>
-    <input type="range" name="height" id="height" min="100" max="250" step="1">
-  <br>
-    <label for="weight">Weight</label>
-    <input type="range" name="weight" id="width" class="weight-range" min="20" max="300" step="1">
-    <button id="calculate">Calculate</button>
-    <input type="text" id="resultH" value="">
-    <input type="text" id="resultW" value="">
-    <strong id="bmi"></strong>
-    <p id="bmi-status"></p>
-    <p>Body mass index, or BMI is used to determine whether
-      you are in healthy weight range for your height.
-    </p>
+    <section class="content">
+      <label for="height" class="section-header">Height</label>
+      <input type="range" name="height" id="height" min="100" max="250" step="1">
+      <label for="weight"class="section-header">Weight</label>
+      <input type="range" name="weight" id="width" class="weight-range" min="20" max="300" step="1">
+      <button id="calculate">Calculate</button>
+      <input type="text" id="resultH" value="">
+      <input type="text" id="resultW" value="">
+    </section>
+    <footer class="summary">
+      <strong id="bmi"></strong>
+      <p id="bmi-status"></p>
+      <p>Body mass index, or BMI is used to determine whether
+        you are in healthy weight range for your height.
+      </p>
+    </footer>
   </main>
+  
   <script src="app.js"></script>
 </body>
 </html>
