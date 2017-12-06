@@ -4,7 +4,7 @@ Vanilla Javascript BMI Calculator
 # ICONS
 - font awesome 4.7.0
 
-#To do
+# To do
 
 - style class 'current value' (bubbles),
 - add waves decoration(no idea how to do that),
