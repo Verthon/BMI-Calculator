@@ -64,7 +64,7 @@ input[type="range"]{
     width:90%;
     height: 8px;
     border-radius: 7px;
-    margin: 10px 20px 40px 20px;
+    margin: 10px 20px 70px 20px;
 }
 input[type=range]::-webkit-slider-thumb {
     -webkit-appearance: none;
@@ -87,10 +87,19 @@ input[type=range]:focus{
     color: #fff;
     padding: 15px;
     text-align: center;
-
 }
 .weight-range{
     color: blue;
+}
+.calculate{
+    width: 100px;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    height: 100px;
+    right: 38%;
+    position: absolute;
+    margin-top: 20%;
+    background: #fff;
 }
 .summary{
     background-color: #fff;
