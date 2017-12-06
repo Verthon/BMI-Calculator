@@ -52,6 +52,10 @@ body{
 .fa-venus, .fa-mars{
     color: #fff;
 }
+
+.gender:focus + .fa-venus{
+    color: #ee7986;
+}
 .content{
     padding: 20px 10px 20px 10px;
     display: flex;
