@@ -43,6 +43,10 @@ body{
     flex-basis: 43%;
     margin: 5px;
 }
+button:focus{
+    -webkit-appearance: none;
+    outline: none;
+}
 .gender:focus{
     -webkit-appearance: none;
     outline: none;
@@ -104,6 +108,11 @@ input[type=range]:focus{
     position: absolute;
     margin-top: 20%;
     background: #fff;
+    box-shadow: 2px 2px 5px 0px #e7aac1;
+
+}
+.fa-long-arrow-right{
+    color: #e8485a;
 }
 .summary{
     background-color: #fff;
@@ -123,4 +132,12 @@ input[type=range]:focus{
 .bmi-result{
     font-size: 35px;
     color: #e8485a;
+}
+
+/* Mobile styles*/
+@media (min-width:350px) and (max-width:420px){
+    .calculate{
+        margin-top: 57%;
+        right: 14%;
+    }
 }
