@@ -1,8 +1,13 @@
 # BMI-Calculator
 Vanilla Javascript BMI Calculator
+https://verthon.github.io/BMI-Calculator/
+
+Design by: 
+https://dribbble.com/shots/2999904-BMI-Calculator-Daily-UI-challenge
 
 # ICONS
 - font awesome 4.7.0
+
 
 # To do
 
